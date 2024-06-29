@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Check if typeof '10' is exactly equal to 10. If not make it exactly equal? 
+        let str ="10";
+        let num =10;
+
+        console.log(typeof(str));
+        console.log(typeof(num));
+
+        if(typeof str !== typeof num ){
+            str = Number(str);
+        }
+
+        console.log(str);
+        console.log(typeof(str));
+        console.log(str===num);
+    </script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            *{
+                
+                font-size: 30px;
+            }
+            body{
+                text-align: center;
+            }
+            h1{
+                font-size: 50px;
+                text-align: center;
+            }
+            .main{
+                /* display: flex; */
+                display: block;
+                gap: 100px;
+            }
+            button{
+                height: 50px;
+                width: 50px;
+                display: inline-block;
+                margin-left: 20px;
+            }
+            .btn{
+                display: flex;
+                row-gap: 20px;
+                justify-content: center;
+                padding-top: 50px;
+                padding-bottom: 40px;
+            }
+            .text{
+                font-size: 50px;
+            }
+            .text span{
+                font-size: 50px;
+            }
+            #n1{
+                margin-bottom: 20px;
+            }
+       
+        </style>
+
+    </head>
+    <body>
+        <h1>maths operation</h1>
+
+        <label for>enter 1st number : </label>
+        <input type="number" name id="n1">
+        <br>
+        <label for>enter 2nd number :</label>
+        <input type="number" name id="n2">
+
+        <br>
+
+        <div class="main">
+            <div class="btn">
+                <button onclick="add()">+</button>
+                <button onclick="subtrct()">-</button>
+                <button onclick="divide()">/</button><br>
+                <button onclick="multiply()">*</button>
+                <button onclick="divson()">%</button>
+
+            </div>
+           
+        </div>
+        <div class="text">your result is
+            <span id="result"></span>
+        </div>
+
+        <script>
+        let input1=document.getElementById("n1");
+        let input2=document.getElementById("n2");
+        let result=document.getElementById("result")
+        function add()
+        {
+            let ans= Number(input1.value)+Number(input2.value);
+            result.innerText=ans;
+            result.style.color="red"
+            
+        }
+
+        function subtrct()
+        {
+            let ans= Number(input1.value)-Number(input2.value);
+            result.innerText=ans;
+        }
+
+        function divide()
+        {
+            let ans= Number(input1.value)/Number(input2.value);
+            result.innerText=ans;
+        }
+        function multiply()
+        {
+            let ans= Number(input1.value)*Number(input2.value);
+            result.innerText=ans;
+        }
+        function divson()
+        {
+            let ans= Number(input1.value)%Number(input2.value);
+            result.innerText=ans;
+        }
+    </script>
+    </body>
+</html>

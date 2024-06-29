@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Q.34 Write to print number in reverse order e.g.: number = 64728 ---> reverse =82746 in JS? 
+         
+        let rev=0;
+        let n= parseInt(prompt("enter your number"))
+    while(n!=0){
+      
+        let rem=n%10;
+        rev = rev*10+rem;
+        n=n/10;
+    }
+        console.log(rev);
+    </script>
+</body>
+</html>

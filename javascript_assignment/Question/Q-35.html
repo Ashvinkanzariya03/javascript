@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>summation</title>
+</head>
+<body>
+    <script>
+        // Write a program make a summation of given number (E.g., 1523 Ans: - 11) in JS?  
+
+        let sum =0
+        let n=parseInt(prompt("enter your number"))
+
+        while(n>0){
+            let r=Math.floor(n%10)
+            sum=sum+r
+            
+            n=n/10
+        }
+        console.log(sum);
+    </script>
+</body>
+</html>

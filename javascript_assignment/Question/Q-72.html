@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Elements Dynamically</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Dynamic Element Addition</h1>
+        <ul id="listContainer">
+            <li>Item 1</li>
+            <li>Item 2</li>
+         
+        </ul>
+    </div>
+    <button onclick="addNewElement()">Add New Element</button>
+
+    <script>
+        function addNewElement() {
+            let newItem = document.createElement('li');
+            newItem.textContent = 'New Item'; 
+            let listContainer = document.getElementById('listContainer');
+            listContainer.appendChild(newItem);
+        }
+    </script>
+</body>
+</html>
